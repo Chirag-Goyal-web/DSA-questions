@@ -70,8 +70,16 @@ public class subtract_two_LL{
             
             else{
                 
-                temp=val;
-                sub=0;
+                //Necessary for test case : (5037362)-(63515)
+
+                if(val<0){
+                    temp=val+10;
+                    sub=-1;
+                }else{
+                    temp=val;
+                    sub=0;
+                }
+
             }
             
             ListNode nw=new ListNode(temp);
