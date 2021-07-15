@@ -1,6 +1,8 @@
-import java.util.*;
+//import java.util.*;
 
 public class Populating_Next_Right_Pointers_in_Each_Node{
+
+    //LINES ARE COMMENTED BCOZ THESE WERE GIVING ERRORS IN VSCODE for no reason(Working fine on leetcode)
 
     class Node {
 
@@ -24,49 +26,49 @@ public class Populating_Next_Right_Pointers_in_Each_Node{
     }
 
     //Approach-1 (Using extra space && preorder)
-    class Solution_01 {
+    // class Solution_01 {
 
-        public Node connect(Node root) {
+    //     public Node connect(Node root) {
             
-            List<List<Node>> ls=new ArrayList<>();
+    //         List<List<Node>> ls=new ArrayList<>();
             
-            preorder(root,0,ls);
+    //         preorder(root,0,ls);
             
-            for(int i=0;i<ls.size();i++){
+    //         for(int i=0;i<ls.size();i++){
                 
-                List<Node> temp=ls.get(i);
+    //             List<Node> temp=ls.get(i);
                 
-                for(int j=0;j<temp.size()-1;j++){                
-                    temp.get(j).next=temp.get(j+1);
-                }
+    //             for(int j=0;j<temp.size()-1;j++){                
+    //                 temp.get(j).next=temp.get(j+1);
+    //             }
                 
-            }
-            return root;
+    //         }
+    //         return root;
             
-        }
+    //     }
         
-        public void preorder(Node root,int level,List<List<Node>> ans){
+    //     public void preorder(Node root,int level,List<List<Node>> ans){
                 
-                if(root==null){
-                    return;
-                }
+    //             if(root==null){
+    //                 return;
+    //             }
                 
-                else{
+    //             else{
                     
-                    if(ans.size()<=level){
-                        ans.add(new ArrayList<>());
-                    }
+    //                 if(ans.size()<=level){
+    //                     ans.add(new ArrayList<>());
+    //                 }
                     
-                    ans.get(level).add(root);
+    //                 ans.get(level).add(root);
                     
-                    preorder(root.left,level+1,ans);
-                    preorder(root.right,level+1,ans);
+    //                 preorder(root.left,level+1,ans);
+    //                 preorder(root.right,level+1,ans);
                     
-                }
+    //             }
                 
-            }   
+    //         }   
    
-    }
+    // }
     
     //Approach-2 Using Rescursion
     class Solution_02 {
