@@ -192,8 +192,6 @@ public class basic{
 
     public static void hamintonainPathAndCycle(ArrayList<Edge>[] graph, int src, ArrayList<String> ans) {
         
-        
-
     }
 
     public static void main(String[] args) {
