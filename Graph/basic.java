@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class basic{
 
@@ -49,8 +49,9 @@ public class basic{
         addEdge(graph, 4, 6, 8);
         addEdge(graph, 5, 6, 3);
 
-        display(graph, V);
+        //display(graph, V);
 
+        bfs(graph,0,new boolean[9]);
     }
 
     public static int findEdge(ArrayList<Edge>[] graph, int u, int v) {

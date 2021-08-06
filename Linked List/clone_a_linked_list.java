@@ -33,6 +33,7 @@ public class clone_a_linked_list{
             
             itr=head;
             
+            //Connect random pointer
             while(itr!=null){
                 
                 if(itr.random!=null){
@@ -45,6 +46,7 @@ public class clone_a_linked_list{
             
             itr=head;
             
+            //Separate two lists
             while(itr!=null){
                 Node temp=itr.next;
                 itr.next=temp.next;
