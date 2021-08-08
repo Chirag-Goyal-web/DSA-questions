@@ -57,8 +57,7 @@ public class course_schedule_2_leetcode_210{
             ans.add(src);
             return true;
         }
-        
-        
+
     }
 
     //Kahn's algorithm

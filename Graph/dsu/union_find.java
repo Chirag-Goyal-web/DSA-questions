@@ -1,8 +1,6 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Arrays;
 
-public class union_Find {
+public class union_find {
     public static class Edge {
         int v, w;
 
@@ -17,7 +15,6 @@ public class union_Find {
         graph[v].add(new Edge(u, w));
     }
 
-    // O(2E) == O(E)
     public static void display(ArrayList<Edge>[] graph, int V) {
         for (int i = 0; i < V; i++) {
             System.out.print(i + " -> ");
@@ -30,6 +27,8 @@ public class union_Find {
 
     static int[] par, size;
 
+    //Find parent along with the path compression. It will keep the time complexity < O(4), 
+    //if we don't do path compression, time complexity= O(log n)
     public static int findPar(int u) {
         if(par[u]==u){
             return u;
@@ -41,6 +40,8 @@ public class union_Find {
         }
     }
 
+    //Merge the smaller part into bigger part. Even if we merge without comparing size, 
+    //it will not affect much bcoz of the path compression
     public static void merge(int p1, int p2) {
         if(size[p1]>size[p2]){
             size[p1]+=size[p2];
