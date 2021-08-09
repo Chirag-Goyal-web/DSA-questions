@@ -1,4 +1,4 @@
-public class construct_bt_from_preorder_and_postorder{
+public class construct_bt_from_preorder_and_postorder_leetcode_889{
 
     public static class TreeNode {
         int val = 0;
