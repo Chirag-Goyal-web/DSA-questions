@@ -10,6 +10,7 @@ public class union_find {
         }
     }
 
+
     public static void addEdge(ArrayList<Edge>[] graph, int u, int v, int w) {
         graph[u].add(new Edge(v, w));
         graph[v].add(new Edge(u, w));
