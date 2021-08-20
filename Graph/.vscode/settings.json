@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "dsu",
         "Topological Question",
         "DFS Questions",
         "BFS Questions",
-        "dsu"
+        ""
     ]
 }
