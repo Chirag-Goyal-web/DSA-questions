@@ -73,7 +73,9 @@ class TestClass {
             temp.add(scn.nextInt());
             graph.add(temp);
         }
- 
+
+        scn.close();
+        
         Collections.sort(graph,(a,b)->{
             return a.get(2)-b.get(2);
         });
