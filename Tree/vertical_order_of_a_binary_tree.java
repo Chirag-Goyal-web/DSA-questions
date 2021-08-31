@@ -50,11 +50,9 @@ public class vertical_order_of_a_binary_tree{
             
             if(cur.node.right!=null)
                 que.add(new vPair(cur.vl+1,cur.node.right));
-            
         }
         
         return ans;
-        
     }
     
     public static void width(TreeNode root,int[] ans,int vl){

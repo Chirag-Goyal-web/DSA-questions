@@ -33,12 +33,6 @@ public class width_of_a_bt{
             
             function(root.left,ans,vl-1);
             function(root.right,ans,vl+1);
-            
-        }
-        
-    }
-
-    public static void main(String[] args) {
-        
+        }   
     }
 }
