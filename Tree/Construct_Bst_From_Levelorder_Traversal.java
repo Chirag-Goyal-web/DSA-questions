@@ -18,11 +18,9 @@ public class Construct_Bst_From_Levelorder_Traversal{
         int rightRange;
         
         LevelNode(TreeNode node,int lR,int rR){
-            
             this.node=node;
             this.leftRange=lR;
             this.rightRange=rR;
-            
         }
     }
 

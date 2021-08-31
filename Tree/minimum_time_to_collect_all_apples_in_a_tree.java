@@ -1,7 +1,7 @@
 import java.util.*;
 public class minimum_time_to_collect_all_apples_in_a_tree{
 
-    public int minTime(int n, int[][] edges, List<Boolean> hasApple) {
+    public int minTime(int n, int[][] edges, ArrayList<Boolean> hasApple) {
         
         ArrayList<Integer>[] graph=new ArrayList[n];
         
@@ -22,7 +22,7 @@ public class minimum_time_to_collect_all_apples_in_a_tree{
         
     }
     
-    public int dfs(int v,ArrayList<Integer>[] graph,List<Boolean> hasApple,boolean[] vis){
+    public int dfs(int v,ArrayList<Integer>[] graph,ArrayList<Boolean> hasApple,boolean[] vis){
         
         int count=0;
         vis[v]=true;

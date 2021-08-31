@@ -2,7 +2,7 @@ public class clone_a_binary_tree{
 
 class Solution{
     
-    class Tree{
+    static class Tree{
         int data;
         Tree left,right,random;
         Tree(int d){
