@@ -75,4 +75,23 @@ public class subset_sum_problem{
         
     }
 
+    //Backengineer, obtain dp array from tabulation to explore all paths
+    public static int backengi_path(int[] arr, int N, boolean[][] dp, int tar, String psf) {
+        if (N == 0 || tar == 0) {
+            if (tar == 0) {
+                System.out.println(psf);
+                return 1;
+            }
+            return 0;
+        }
+
+        int count = 0;
+        if (tar - arr[N - 1] >= 0 && dp[N - 1][tar - arr[N - 1]])
+            count += backengi_path(arr, N - 1, dp, tar - arr[N - 1], psf + arr[N - 1] + " ");
+        if (dp[N - 1][tar])
+            count += backengi_path(arr, N - 1, dp, tar, psf);
+
+        return count;
+    }
+
 }

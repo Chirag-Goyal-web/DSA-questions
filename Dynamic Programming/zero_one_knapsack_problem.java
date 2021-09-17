@@ -42,6 +42,7 @@ public class zero_one_knapsack_problem{
         }
     }
 
+    //Tabulation
     class Solution_{ 
 
         static int knapSack(int w, int wt[], int val[], int n) { 
