@@ -18,6 +18,7 @@ public class remove_boxes_leetcode_546{
         
         else{
             int i;
+            //Necessary to store result in dp, bcoz we are modifying count
             int prevC=count;
             
             for(i=start;i<end;i++){
