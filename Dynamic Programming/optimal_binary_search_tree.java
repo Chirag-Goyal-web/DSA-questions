@@ -1,7 +1,6 @@
 public class optimal_binary_search_tree{
     
     public static int optimalTree(int[] arr,int[] freq){
-
         int len=arr.length;
         Integer[][] dp=new Integer[len][len];
 
