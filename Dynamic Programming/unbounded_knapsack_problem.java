@@ -2,7 +2,7 @@ import java.util.*;
 
 public class unbounded_knapsack_problem{
 
-    //Memoization
+    //Tabulation
     class Solution{
     
         static int knapSack(int N, int W, int val[], int wt[]){
@@ -29,7 +29,7 @@ public class unbounded_knapsack_problem{
         
     }
 
-    //Tabulation
+    //Memoization
     class Solution_{
     
         static int knapSack(int N, int W, int val[], int wt[])
