@@ -1,5 +1,5 @@
 import java.util.*;
-public class next{
+public class next_greater_element_2_leetcode_503{
 
     public int[] nextGreaterElements(int[] nums) {
         
