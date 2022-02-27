@@ -17,7 +17,6 @@ public class single_number_3{
                 ans[1]^=i;
             }
         }
-        
         return ans;
     }
 }
